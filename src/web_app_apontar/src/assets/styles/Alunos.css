@@ -1,0 +1,129 @@
+.main-content-aluno {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-left: 250px;
+  min-height: 100vh;
+
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-container {
+  display: flex;
+  gap: 10px;
+}
+
+.add-aluno-button {
+  background-color: #b31419;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-aluno-button:hover {
+  background-color: #930f14;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-y: auto; /* Evita overflow vertical */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100%;
+
+}
+.table-container {
+  height: 400px; /* Altura fixa com scroll */
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content button:nth-child(2) {
+  background-color: #b31419;
+  color: white;
+}

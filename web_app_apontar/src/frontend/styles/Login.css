@@ -1,0 +1,134 @@
+/* Estilização geral */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EAE9E9;
+  }
+  
+  /* Container principal da tela */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10rem;
+  }
+  
+  /* Formulário de cadastro */
+  .form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px; /* Largura máxima */
+    width: 100%;
+    min-height: 400px; /* Altura mínima */
+    position: relative; /* Necessário para o transform funcionar bem */
+    /*transform: translateX(200px); /* Move 200px para a direita */
+  }
+  
+  
+  /* Grupos de inputs */
+  .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%; /* Ajusta o campo para ocupar toda a largura */
+    border: none; /* Remove a borda */
+    border-bottom: 2px solid #ccc; /* Adiciona apenas uma linha inferior */
+    outline: none; /* Remove o destaque azul ao clicar */
+    font-size: 14px;
+    padding: 5px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* Botão de cadastro */
+  .btn {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    width: 100%; /* Ocupa toda a largura do formulário */
+  }
+  
+  .btn:hover {
+    background-color: #8a0000;
+  }
+  
+  /* Estilização para o container de imagem */
+  .image-container {
+    position: relative; /* Necessário para o posicionamento absoluto */
+  }
+  
+  .image-container .image-background {
+    background-color: #D9D9D9; /* Cor cinza */
+    width: 100%; /* Mesma largura que a imagem */
+    height: 100%; /* Mesma altura que a imagem */
+    position: absolute; /* Posicionamento relativo à imagem */
+    bottom: 40px; /* Define o deslocamento vertical */
+    right: 40px; /* Alinha com a borda esquerda */
+    border-radius: 30px; /* Mesmo arredondamento que a imagem */
+    z-index: 0; /* Garante que o retângulo fique atrás da imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* (Opcional) Adiciona sombra */
+  }
+  
+  .image-container img {
+    position: relative; /* Coloca a imagem acima do retângulo */
+    z-index: 1;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px; /* Mesma borda arredondada que o retângulo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
+  }
+  
+  
+  
+  /* Estilização para os ícones */
+  .input-with-icon {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    border-bottom: 2px solid #ccc; /* Linha inferior */
+    padding: 5px 0;
+    position: relative; /* Necessário para posicionar os ícones */
+  }
+  
+  .input-with-icon input {
+    flex: 1; /* Faz o input ocupar todo o espaço disponível */
+    border: none; /* Remove borda padrão */
+    outline: none; /* Remove o destaque azul padrão */
+    padding: 10px 0; /* Espaçamento interno para altura uniforme */
+    font-size: 14px; /* Tamanho do texto */
+    margin-bottom: 0.001rem;
+    box-sizing: border-box; /* Garante que padding não quebre o layout */
+  }
+  
+  
+  .input-with-icon .icon {
+    margin-left: px; /* Adiciona espaço entre o campo e o ícone */
+    color: #888; /* Cor do ícone */
+    font-size: 18px; /* Tamanho do ícone */
+  }
+
+  .link {
+    color: #00000080;
+    font-size: 14px;
+  }
